@@ -1,2 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Toriの小窝</title><link>https://tom6814.github.io</link><description>A Whale's Daily Life</description><copyright>Toriの小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://2z2.org/upload/IMG_20250804_181028.jpeg</url><title>avatar</title><link>https://tom6814.github.io</link></image><lastBuildDate>Sun, 28 Dec 2025 07:11:29 +0000</lastBuildDate><managingEditor>Toriの小窝</managingEditor><ttl>60</ttl><webMaster>Toriの小窝</webMaster></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Toriの小窝</title><link>https://tom6814.github.io</link><description>A Whale's Daily Life</description><copyright>Toriの小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://2z2.org/upload/IMG_20250804_181028.jpeg</url><title>avatar</title><link>https://tom6814.github.io</link></image><lastBuildDate>Sun, 28 Dec 2025 07:16:27 +0000</lastBuildDate><managingEditor>Toriの小窝</managingEditor><ttl>60</ttl><webMaster>Toriの小窝</webMaster><item><title>Hello!</title><link>https://tom6814.github.io/post/Hello%21.html</link><description>## Tori (Tom6814) 的自我介绍
+
+大家好，我是 **Tori**（Tom6814），欢迎来到我的小窝！ヾ(≧▽≦*)o
+
+### 简要介绍
+- 目前专注于个人网站和前端技术的学习与实践
+- 喜欢分享技术知识、工具与生活点滴
+- 热爱开源项目，乐于参与社区建设
+
+### 社交与联系方式
+- GitHub: [Tom6814](https://github.com/Tom6814)
+- 主站：[2z2.org](https://2z2.org)
+
+### 兴趣爱好
+- 编程、前端设计、UI/UX 改进
+- 数码产品、摄影、旅行
+- 喜欢记录和总结有趣体验
+
+### 技能栈
+- HTML/CSS/JavaScript
+- React、Vue、Node.js
+- 静态网站部署、Netlify、GitHub Pages
+
+如果你对我的工作感兴趣，欢迎通过以上方式联系我或一起讨论技术~
+。</description><guid isPermaLink="true">https://tom6814.github.io/post/Hello%21.html</guid><pubDate>Sun, 28 Dec 2025 07:11:02 +0000</pubDate></item></channel></rss>
