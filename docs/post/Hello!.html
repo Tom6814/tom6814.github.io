@@ -282,5 +282,42 @@ function iFrameLoading(){
 
 
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const createRipple = (event) => {
+    const button = event.currentTarget;
+    const circle = document.createElement("span");
+    const diameter = Math.max(button.clientWidth, button.clientHeight);
+    const radius = diameter / 2;
+    circle.style.width = circle.style.height = `${diameter}px`;
+    circle.style.left = `${event.clientX - button.getBoundingClientRect().left - radius}px`;
+    circle.style.top = `${event.clientY - button.getBoundingClientRect().top - radius}px`;
+    circle.className = "ripple";
+    const existing = button.getElementsByClassName("ripple")[0];
+    if (existing) existing.remove();
+    button.appendChild(circle);
+  };
+  document.querySelectorAll(".btn, .LabelName, .circle").forEach((btn) => {
+    btn.addEventListener("click", createRipple);
+    const style = window.getComputedStyle(btn);
+    if (style.position === "static") btn.style.position = "relative";
+    if (style.overflow !== "hidden") btn.style.overflow = "hidden";
+  });
+  document.querySelectorAll(".postTitle, #postBody").forEach((el, i) => {
+    el.style.animationDelay = `${i * 0.05}s`;
+    el.classList.add("fade-in");
+  });
+  const fab = document.createElement("button");
+  fab.className = "fab-btn";
+  fab.innerHTML = '<svg class="octicon" width="24" height="24" viewBox="0 0 16 16" fill="currentColor"><path d="M8 3.5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/><path d="M4.646 6.854a.5.5 0 0 1 .708 0L8 4.207l2.646 2.647a.5.5 0 0 1-.708.708L8 5.707 5.354 8.354a.5.5 0 0 1-.708-.708z"/></svg>';
+  fab.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  document.body.appendChild(fab);
+  const onscroll = () => {
+    const s = document.body.scrollTop || document.documentElement.scrollTop;
+    fab.style.display = s > 100 ? "flex" : "none";
+  };
+  window.addEventListener("scroll", onscroll);
+  onscroll();
+});
 </script>
 </html>
